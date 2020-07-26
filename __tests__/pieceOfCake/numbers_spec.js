@@ -15,6 +15,7 @@ describe('for numbers', () => {
 
     // <--start
     // Please write an expression determine if `notNumber` is NaN.
+    // eslint-disable-next-line no-restricted-globals
     const isNan = isNaN(notNumber);
     // --end->
 

@@ -5,7 +5,7 @@ describe('for variable', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 6;
     // --end->
 
     // eslint-disable-next-line block-scoped-var
@@ -20,20 +20,20 @@ describe('for variable', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 1000;
     // --end->
 
     // eslint-disable-next-line no-undef
     expect(i).toEqual(expected);
   });
 
-  it('should be able to change details of const variable', () => {
+  fit('should be able to change details of const variable', () => {
     const constVariable = { name: 'changeit' };
     constVariable.name = 'new name';
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'new name';
     // --end->
 
     expect(constVariable.name).toEqual(expected);

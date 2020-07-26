@@ -43,7 +43,7 @@ describe('for object', () => {
     // Please write down the correct value. You should write the final result directly.
     const expected = ['name', 'yearOfBirth'];
     // --end->
-  
+
     expect(Object.keys(person)).toEqual(expected);
   });
 
