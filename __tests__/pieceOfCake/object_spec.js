@@ -82,8 +82,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = {'name': 'Bob', 'yearOfBirth': 2019};
-    
+    const expected = '{"name":"Bob","yearOfBirth":2019}';
     // --end->
 
     expect(json).toEqual(expected);
@@ -194,7 +193,6 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    console.log('debug1', rabbit.speak('?_?'));
     const expected = 'The weird rabbit says ?_?.';
     // --end->
 
@@ -211,10 +209,8 @@ describe('for object', () => {
     // * rabbitFunctionPrototype
     // * prototypeOfRabbitFunction
     // * functionPrototype
-    console.log('debug2', prototypeOfRabbitInstance);
-    console.log('debug3', prototypeOfRabbitFunction);
-    const expectedPrototypeOfRabbitInstance = null;
-    const expectedPrototypeOfRabbitFunction = null;
+    const expectedPrototypeOfRabbitInstance = rabbitFunctionPrototype;
+    const expectedPrototypeOfRabbitFunction = functionPrototype;
     // --end->
 
     expect(prototypeOfRabbitInstance).toBe(expectedPrototypeOfRabbitInstance);
